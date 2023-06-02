@@ -1,7 +1,7 @@
 "use client";
 
-import Destination from "@/components/Destination";
-import Header from "@/components/Header";
+import Destination from "@/Components/Destination";
+import Header from "@/Components/Header";
 import Image from "next/image";
 import React, { useState } from "react";
 

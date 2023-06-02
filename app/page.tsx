@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Header from "@/components/Header";
+import Header from "@/Components/Header";
 import React, { useState } from "react";
 
 type ShowNav = boolean;

@@ -1,7 +1,7 @@
 "use client";
 
-import Header from "@/components/Header";
-import Technology from "@/components/Technology";
+import Header from "@/Components/Header";
+import Technology from "@/Components/Technology";
 import Image from "next/image";
 import React, { useState } from "react";
 

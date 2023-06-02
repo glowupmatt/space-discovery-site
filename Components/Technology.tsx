@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import * as technologyData from "./technologyData";
+import { technologyData } from "./technologyData";
 import Image from "next/image";
 import classNames from "classnames";
 
@@ -16,13 +16,13 @@ const Technology = () => {
           height={500}
           quality={100}
           alt=""
-          src={technologyData.technologyData[selectedTech].img}
+          src={technologyData[selectedTech].img}
           className="w-full"
         />
         <hr className="border-white w-full" />
       </div>
       <div className="flex justify-between gap-4 w-[9.5rem]">
-        {technologyData.technologyData.map((crew, index) => {
+        {technologyData.map((crew, index) => {
           const onClickHandler = () => {
             setSelectedTech(index);
           };
@@ -46,10 +46,10 @@ const Technology = () => {
       <div className="flex flex-col items-center gap-4 h-[15rem] p-4 md:px-[8rem]">
         <div className="flex flex-col items-center">
           <h4 className="font-medium text-[20px]">THE TERMINOLOGY…</h4>
-          <h4>{technologyData.technologyData[selectedTech].name}</h4>
+          <h4>{technologyData[selectedTech].name}</h4>
         </div>
         <p className="text-center text-[15px]">
-          {technologyData.technologyData[selectedTech].desc}
+          {technologyData[selectedTech].desc}
         </p>
       </div>
     </div>
