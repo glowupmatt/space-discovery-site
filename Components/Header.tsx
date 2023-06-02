@@ -55,26 +55,28 @@ const Header: React.FC<HeaderProps> = ({ setShowNav, showNav }) => {
       </header>
       <div
         className={clsx("right-0 top-0 p-[5rem] w-[18rem]", {
-          "bg-black h-screen md:hidden fixed z-[150]": showNav === true,
+          "bg-black h-full w-[79%] fixed flex right-0 top-0 md:hidden z-[150]":
+            showNav === true,
           "h-0 w-0 hidden": showNav === false,
         })}
       >
         <nav
           className={clsx("text-white flex flex-col gap-[5rem]", {
             "w-0 hidden": showNav === false,
-            "w-full block absolute z-[100]md:hidden": showNav === true,
+            "w-full block absolute z-[100] h-[79%] items-end text-start gap-[4rem] justify-center md:hidden":
+              showNav === true,
           })}
         >
-          <a href="/">
+          <a className="w-full" href="/">
             <span>00</span> HOME
           </a>
-          <a href="/destination">
+          <a className="w-full" href="/destination">
             <span>01</span> DESTINATION
           </a>
-          <a href="/crew">
+          <a className="w-full" href="/crew">
             <span>02</span> CREW
           </a>
-          <a href="/technology">
+          <a className="w-full" href="/technology">
             <span>03</span> TECHNOLOGY
           </a>
         </nav>
