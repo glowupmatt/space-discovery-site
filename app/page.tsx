@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Header from "@/Components/Header";
+import Header from "@/components/Header";
 import React, { useState } from "react";
 
 type ShowNav = boolean;
@@ -22,7 +22,7 @@ export default function Home() {
         quality={100}
         src="/starter-code/assets/home/background-home-tablet.jpg"
         alt=""
-        className="hidden md:block md:w-full md:absolute md:left-0 md:top-0 md:right-0 md:bottom-0 lg:hidden"
+        className="hidden md:block md:min-h-screen md:h-[60rem] md:w-full md:absolute md:left-0 md:top-0 md:right-0 md:bottom-0 lg:hidden"
       />
       <Image
         fill

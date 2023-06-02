@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { destinationData, DestinationDataType } from "./destinationData";
 import Image from "next/image";
-import clsx from "clsx";
+import classNames from "classnames";
 
 const Destination = () => {
   const [selectedPlanet, setSelectedPlanet] = useState(0);
@@ -34,7 +34,7 @@ const Destination = () => {
                 <p>{info.title}</p>
               </button>
               <hr
-                className={clsx("border-white border-y-2", {
+                className={classNames("border-white border-y-2", {
                   hidden: selectedPlanet !== index,
                 })}
               />

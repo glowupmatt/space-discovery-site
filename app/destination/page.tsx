@@ -1,7 +1,7 @@
 "use client";
 
-import Destination from "@/Components/Destination";
-import Header from "@/Components/Header";
+import Destination from "@/components/Destination";
+import Header from "@/components/Header";
 import Image from "next/image";
 import React, { useState } from "react";
 
@@ -17,7 +17,7 @@ const page = () => {
         height={500}
         src="/starter-code/assets/destination/background-destination-mobile.jpg"
         alt=""
-        className="absolute h-[57.125rem] md:w-0 md:h-0 md:hidden"
+        className="absolute h-[57.125rem] md:hidden"
       />
       <Image
         width={500}

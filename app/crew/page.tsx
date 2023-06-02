@@ -1,9 +1,9 @@
 "use client";
 
-import Header from "@/Components/Header";
+import Header from "@/components/Header";
 import Image from "next/image";
 import React, { useState } from "react";
-import Crew from "@/Components/Crew";
+import Crew from "@/components/Crew";
 
 type ShowNav = boolean;
 
@@ -20,10 +20,12 @@ const page = () => {
         className="absolute min-h-[44.375rem] h-full md:w-0 md:h-0 md:hidden"
       />
       <Image
-        fill
+        width={500}
+        height={500}
+        quality={100}
         src="/starter-code/assets/crew/background-crew-tablet.jpg"
         alt=""
-        className="hidden md:block md:w-full md:h-full lg:hidden lg:w-0 lg:h-0"
+        className="hidden md:block md:w-full md:absolute md:left-0 md:top-0 md:right-0 md:bottom-0 lg:hidden"
       />
       <Image
         fill
@@ -34,7 +36,7 @@ const page = () => {
       <div className="relative overflow-hidden w-full">
         <Header setShowNav={setShowNav} showNav={showNav} />
       </div>
-      <div className="absolute w-full flex justify-between items-center p-7 md:p-0">
+      <div className="absolute w-full flex justify-between items-center md:p-0">
         <Crew />
       </div>
     </main>

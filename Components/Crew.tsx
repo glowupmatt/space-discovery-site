@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import clsx from "clsx";
 import Image from "next/image";
 import { crewData } from "./crewData";
+import classNames from "classnames";
 
 const Crew = () => {
   const [selectedCrew, setSelectedCrew] = useState(0);
@@ -12,19 +12,19 @@ const Crew = () => {
           <span>02</span> Meet your crew
         </p>
       </div>
-      <div className="md:flex md:flex-col-reverse md:items-center md:h-full">
-        <div className="flex flex-col items-center md:w-full">
+      <div className="flex flex-col gap-4 md:flex-col-reverse md:items-center md:h-[55.2rem] md:justify-between">
+        <div className="flex flex-col items-center md:h-[35.75rem] md:w-[25.523rem] md:justify-end">
           <Image
             width={500}
             height={500}
             quality={100}
             alt=""
             src={crewData[selectedCrew].img}
-            className="w-[70%]"
+            className="w-[11.07rem] md:w-[33.719rem] md:h-[33.25rem]"
           />
           <hr className="border-white w-full md:hidden" />
         </div>
-        <div className="flex justify-between w-[7rem]">
+        <div className="flex justify-center w-full gap-4">
           {crewData.map((crew, index) => {
             const onClickHandler = () => {
               setSelectedCrew(index);
@@ -33,7 +33,7 @@ const Crew = () => {
               <div
                 onClick={onClickHandler}
                 key={index}
-                className={clsx("p-2 rounded-full", {
+                className={classNames("p-2 rounded-full", {
                   "bg-[rgba(255,255,255,0.5)]": selectedCrew !== index,
                   "bg-white": selectedCrew === index,
                 })}
