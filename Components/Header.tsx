@@ -55,8 +55,7 @@ const Header: React.FC<HeaderProps> = ({ setShowNav, showNav }) => {
       </header>
       <div
         className={clsx("right-0 top-0 p-[5rem] w-[18rem]", {
-          "backdrop-blur bg-white/50 h-screen md:hidden fixed z-[150]":
-            showNav === true,
+          "bg-black h-screen md:hidden fixed z-[150]": showNav === true,
           "h-0 w-0 hidden": showNav === false,
         })}
       >
