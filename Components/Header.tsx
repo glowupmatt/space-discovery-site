@@ -23,33 +23,33 @@ const Header: React.FC<HeaderProps> = ({ setShowNav, showNav }) => {
           height={50}
           src="/starter-code/assets/shared/logo.svg"
           alt=""
-          className="w-[15%] h-[15%] md:pt-4 md:pl-8"
+          className="w-[40px] h-[40px] md:pt-4 md:pl-8"
         />
         <nav className="w-0 hidden h-0 md:relative md:text-white md:w-full md:h-[6rem] md:p-[2rem] md:flex md:justify-center md:gap-[2.5rem] md:items-center md:backdrop-blur md:bg-white/20">
           <a className="flex gap-2" href="/">
             <span className="md:hidden lg:block">00</span> HOME
           </a>
           <a className="flex gap-2" href="/destination">
-            <span className="md:hidden lg:block">01</span> DESTINATION
+            <span className="block md:hidden lg:block">01</span> DESTINATION
           </a>
           <a className="flex gap-2" href="/crew">
-            <span className="md:hidden lg:block">02</span> CREW
+            <span className="block md:hidden lg:block">02</span> CREW
           </a>
           <a className="flex gap-2" href="/technology">
-            <span className="md:hidden lg:block">03</span> TECHNOLOGY
+            <span className="block md:hidden lg:block">03</span> TECHNOLOGY
           </a>
         </nav>
         {showNav ? (
           <CloseIcon
             onClick={showNavHandler}
             style={{ fill: "white", width: "15%", height: "100%" }}
-            className="md:hidden w-0 h-0"
+            className="block md:hidden w-0 h-0"
           />
         ) : (
           <MenuIcon
             onClick={showNavHandler}
             style={{ fill: "white", width: "15%", height: "100%" }}
-            className="md:hidden w-0 h-0"
+            className="block md:hidden w-0 h-0"
           />
         )}
       </header>

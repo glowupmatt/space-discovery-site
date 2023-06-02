@@ -17,10 +17,12 @@ export default function Home() {
         className="w-full md:w-0 md:h-0 md:hidden"
       />
       <Image
-        fill
+        width={500}
+        height={500}
+        quality={100}
         src="/starter-code/assets/home/background-home-tablet.jpg"
         alt=""
-        className="hidden md:block md:w-full md:h-full lg:hidden lg:w-0 lg:h-0"
+        className="hidden md:block md:w-full md:absolute md:left-0 md:top-0 md:right-0 md:bottom-0 lg:hidden"
       />
       <Image
         fill
@@ -28,10 +30,10 @@ export default function Home() {
         alt=""
         className="hidden lg:block lg:w-full lg:h-full "
       />
-      <div className="relative overflow-hidden w-full">
+      <div className="relative overflow-hidden">
         <Header setShowNav={setShowNav} showNav={showNav} />
       </div>
-      <div className="absolute h-[85%] flex flex-col justify-between items-center p-7 md:py-[2.75rem] md:px-[1rem] md:w-full md:justify-centerß">
+      <div className="absolute h-[85%] flex flex-col justify-between items-center p-7 md:p-0 md:w-full md:justify-center md:h-[52rem] md:gap-[6rem]">
         <div className="flex flex-col justify-between items-center gap-4 md:w-[28.125rem] md:justify-center">
           <p className="text-white">SO, YOU WANT TO TRAVEL TO</p>
           <h1 className="text-[80px] md:text-[9.375rem]">SPACE</h1>
