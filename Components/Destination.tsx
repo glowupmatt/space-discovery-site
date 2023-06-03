@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { destinationData } from "./destinationData";
+import { destinationData } from "@/compData/destinationData";
 import Image from "next/image";
 import classNames from "classnames";
 

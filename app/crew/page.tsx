@@ -2,14 +2,10 @@
 
 import Header from "@/Components/Header";
 import Image from "next/image";
-import React, { useState } from "react";
+
 import Crew from "@/Components/Crew";
 
-type ShowNav = boolean;
-
-const page = () => {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const [showNav, setShowNav] = useState<ShowNav>(false);
+const CrewPage = () => {
   return (
     <main>
       <Image
@@ -34,7 +30,7 @@ const page = () => {
         className="hidden lg:block lg:w-full lg:h-full "
       />
       <div className="relative overflow-hidden w-full">
-        <Header setShowNav={setShowNav} showNav={showNav} />
+        <Header />
       </div>
       <div className="absolute w-full flex justify-between items-center md:p-0">
         <Crew />
@@ -43,4 +39,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default CrewPage;

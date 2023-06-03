@@ -1,5 +1,7 @@
+"use client";
+
 import React, { useState } from "react";
-import { technologyData } from "./technologyData";
+import { technologyData } from "@/compData/technologyData";
 import Image from "next/image";
 import classNames from "classnames";
 
@@ -38,7 +40,7 @@ const Technology = () => {
                 }
               )}
             >
-              {index}
+              {index + 1}
             </div>
           );
         })}

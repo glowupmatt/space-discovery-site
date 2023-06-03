@@ -2,12 +2,9 @@
 
 import Image from "next/image";
 import Header from "@/Components/Header";
-import React, { useState } from "react";
-
-type ShowNav = boolean;
+import React from "react";
 
 export default function Home() {
-  const [showNav, setShowNav] = useState<ShowNav>(false);
   return (
     <main>
       <Image
@@ -31,7 +28,7 @@ export default function Home() {
         className="hidden lg:block lg:w-full lg:h-full "
       />
       <div className="relative overflow-hidden">
-        <Header setShowNav={setShowNav} showNav={showNav} />
+        <Header />
       </div>
       <div className="absolute h-[85%] flex flex-col justify-between items-center p-7 md:p-0 md:w-full md:justify-center md:h-[52rem] md:gap-[6rem]">
         <div className="flex flex-col justify-between items-center gap-4 md:w-[28.125rem] md:justify-center">

@@ -1,6 +1,8 @@
+"use client";
+
 import React, { useState } from "react";
 import Image from "next/image";
-import { crewData } from "./crewData";
+import { crewData } from "@/compData/crewData";
 import classNames from "classnames";
 
 const Crew = () => {
